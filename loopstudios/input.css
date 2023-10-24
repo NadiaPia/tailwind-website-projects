@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#hero {
+    background-image: url('../images/desktop/image-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:576px) {
+    #hero {
+        background-image: url('../images/mobile/image-hero.jpg');
+        background-position: center;
+    }
+}
+
+@layer base {
+    h1 {
+        @apply text-3xl;        
+    }
+
+    h2 {
+        @apply text-xl;
+    }
+}
+
+@layer components {
+    .btn-blue {
+        @apply bg-blue-500 py-2 px-4 rounded-xl font-bold
+        hover:bg-blue-700 text-white
+    }
+}
+
+.content-area {
+    @apply bg-green-200;
+    height: theme('spacing.128')
+}
+
+@media screen(xl) {
+    body {
+        @apply bg-black text-white;
+    }
+}
