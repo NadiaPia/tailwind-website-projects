@@ -47,9 +47,35 @@
         <a href="#" class="px-8 py-3 font-bold text-white bg-cyan rounded-full hover:opacity-70">Sing Up</a>
       </div>
 
-      <!-- to do Humburger Menu -->
+      <!-- Humburger Menu -->
+
+      <button 
+        id="menu-btn" 
+        type="button" 
+        class="block hamburger lg:hidden focus:outline-none">
+
+        <span class="hamburger-top"></span>
+        <span class="hamburger-middle"></span>
+        <span class="hamburger-bottom"></span>
+      </button>
     </div>
-    <!-- to do Mobile Menu -->
+    <!-- Mobile Menu -->
+     <div id="menu" 
+     class="hidden absolute p-6 rounded-lg left-6 right-6 top-20 z-100 bg-darkViolet">    
+      
+      <div 
+      class="flex flex-col items-center justify-center w-full space-y-6 font-bold text-white rounded-sm">     
+        
+        <a href="#" class="w-full text-center">Features</a>
+        <a href="#" class="w-full text-center">Prices</a>
+        <a href="#" class="w-full text-center">Resources</a>
+        <a href="#" class="pt-6 border-t border-gray-400 w-full text-center">Login</a>
+        <a href="#" class="w-full py-3 text-center rounded-full bg-cyan text-center">Sign Up</a>
+
+
+      </div>
+
+     </div>
 
   </nav>
   <!-- Hero Section -->
@@ -271,7 +297,7 @@
             </a>
           </div>
 
-        </div> 
+        </div>
 
         <!-- Menu 2 -->
         <div class="flex flex-col items-center w-full md:items-start">
@@ -302,7 +328,7 @@
               About
             </a>
             <a href="#" class="capitalize text-grayishViolet hover:text-cyan">
-             Our team
+              Our team
             </a>
             <a href="#" class="capitalize text-grayishViolet hover:text-cyan">
               Careers
